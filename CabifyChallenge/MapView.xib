@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapVC" customModule="CabifyChallenge" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelEndPoint" destination="Ca6-ft-jmR" id="rYO-e8-knO"/>
+                <outlet property="cancelStartPoint" destination="XOI-Nd-HK8" id="ymO-N8-ffl"/>
+                <outlet property="endPointView" destination="lFJ-0p-LDg" id="FJY-fA-On5"/>
+                <outlet property="getVehicles" destination="l8c-d6-nCg" id="gDk-od-9PI"/>
+                <outlet property="labelEndPoint" destination="z5O-OF-Rly" id="dEN-vQ-afL"/>
+                <outlet property="labelStartPoint" destination="uez-4y-gmJ" id="GfA-wd-Yrn"/>
+                <outlet property="mapView" destination="00h-mg-ksY" id="88f-j8-HTB"/>
+                <outlet property="startPointView" destination="Jc6-oT-9k9" id="ieB-o1-Bbx"/>
+                <outlet property="view" destination="iN0-l3-epB" id="5Tl-Qd-0AD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="00h-mg-ksY">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </mapView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jc6-oT-9k9">
+                    <rect key="frame" x="10" y="40" width="580" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uez-4y-gmJ">
+                            <rect key="frame" x="10" y="5" width="530" height="50"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                            <color key="textColor" red="0.8901960784313725" green="0.5607843137254902" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOI-Nd-HK8">
+                            <rect key="frame" x="545" y="17" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="5yZ-uR-U8c"/>
+                                <constraint firstAttribute="width" constant="25" id="RBz-fe-3vM"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="Cancel"/>
+                            <connections>
+                                <action selector="cancelStartPoint:" destination="-1" eventType="touchUpInside" id="Ux4-21-MnN"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="41W-ki-pde"/>
+                        <constraint firstItem="uez-4y-gmJ" firstAttribute="top" secondItem="Jc6-oT-9k9" secondAttribute="top" constant="5" id="6Q2-3s-Cmv"/>
+                        <constraint firstItem="XOI-Nd-HK8" firstAttribute="leading" secondItem="uez-4y-gmJ" secondAttribute="trailing" constant="5" id="86b-4d-6Cy"/>
+                        <constraint firstItem="uez-4y-gmJ" firstAttribute="leading" secondItem="Jc6-oT-9k9" secondAttribute="leading" constant="10" id="FYa-cd-6FY"/>
+                        <constraint firstAttribute="trailing" secondItem="XOI-Nd-HK8" secondAttribute="trailing" constant="10" id="OoN-HM-AaZ"/>
+                        <constraint firstItem="XOI-Nd-HK8" firstAttribute="top" secondItem="Jc6-oT-9k9" secondAttribute="top" constant="17" id="Zkr-3a-FJE"/>
+                        <constraint firstAttribute="bottom" secondItem="XOI-Nd-HK8" secondAttribute="bottom" constant="18" id="etD-zH-08u"/>
+                        <constraint firstAttribute="bottom" secondItem="uez-4y-gmJ" secondAttribute="bottom" constant="5" id="sli-EH-CoQ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lFJ-0p-LDg">
+                    <rect key="frame" x="10" y="110" width="580" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ca6-ft-jmR">
+                            <rect key="frame" x="542" y="17" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="0N6-6W-Lno"/>
+                                <constraint firstAttribute="width" constant="25" id="dsG-vT-L6S"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="Cancel"/>
+                            <connections>
+                                <action selector="cancelEndPoint:" destination="-1" eventType="touchUpInside" id="eyt-vP-p67"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5O-OF-Rly">
+                            <rect key="frame" x="10" y="5" width="522" height="50"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                            <color key="textColor" red="0.8901960784313725" green="0.5607843137254902" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="0.90000000000000002" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Ca6-ft-jmR" secondAttribute="trailing" constant="13" id="F0q-8X-8Ac"/>
+                        <constraint firstItem="Ca6-ft-jmR" firstAttribute="top" secondItem="lFJ-0p-LDg" secondAttribute="top" constant="17" id="SPE-G2-huo"/>
+                        <constraint firstAttribute="bottom" secondItem="Ca6-ft-jmR" secondAttribute="bottom" constant="18" id="acC-ED-rae"/>
+                        <constraint firstItem="z5O-OF-Rly" firstAttribute="leading" secondItem="lFJ-0p-LDg" secondAttribute="leading" constant="10" id="beP-B3-uly"/>
+                        <constraint firstItem="z5O-OF-Rly" firstAttribute="top" secondItem="lFJ-0p-LDg" secondAttribute="top" constant="5" id="do5-1A-Txv"/>
+                        <constraint firstAttribute="height" constant="60" id="e34-Kb-f0g"/>
+                        <constraint firstAttribute="bottom" secondItem="z5O-OF-Rly" secondAttribute="bottom" constant="5" id="h3s-e5-s6W"/>
+                        <constraint firstItem="Ca6-ft-jmR" firstAttribute="leading" secondItem="z5O-OF-Rly" secondAttribute="trailing" constant="10" id="xKY-UM-GM5"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8c-d6-nCg">
+                    <rect key="frame" x="0.0" y="540" width="600" height="60"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="tKM-8S-t7q"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                    <state key="normal" image="Car">
+                        <color key="titleColor" white="0.22" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="getVehicles:" destination="-1" eventType="touchUpInside" id="93g-Qc-pdB"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="00h-mg-ksY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7wa-yL-uNl"/>
+                <constraint firstItem="00h-mg-ksY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="DCd-Ss-8cT"/>
+                <constraint firstItem="Jc6-oT-9k9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="Dsi-QM-4zY"/>
+                <constraint firstAttribute="trailing" secondItem="l8c-d6-nCg" secondAttribute="trailing" id="IN6-Qd-lcQ"/>
+                <constraint firstAttribute="bottom" secondItem="00h-mg-ksY" secondAttribute="bottom" id="Ol9-D1-CUa"/>
+                <constraint firstItem="lFJ-0p-LDg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="TPp-nl-3Lq"/>
+                <constraint firstItem="Jc6-oT-9k9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="V7M-9e-jwi"/>
+                <constraint firstAttribute="trailing" secondItem="Jc6-oT-9k9" secondAttribute="trailing" constant="10" id="c5C-pg-Smv"/>
+                <constraint firstItem="l8c-d6-nCg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gaw-GQ-S0c"/>
+                <constraint firstItem="lFJ-0p-LDg" firstAttribute="top" secondItem="Jc6-oT-9k9" secondAttribute="bottom" constant="10" id="iFV-Ts-2VM"/>
+                <constraint firstAttribute="bottom" secondItem="l8c-d6-nCg" secondAttribute="bottom" id="mnz-wr-TXd"/>
+                <constraint firstAttribute="trailing" secondItem="lFJ-0p-LDg" secondAttribute="trailing" constant="10" id="ndk-pI-JsT"/>
+                <constraint firstAttribute="trailing" secondItem="00h-mg-ksY" secondAttribute="trailing" id="shP-yc-8oG"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="Cancel" width="24" height="24"/>
+        <image name="Car" width="50" height="50"/>
+    </resources>
+</document>

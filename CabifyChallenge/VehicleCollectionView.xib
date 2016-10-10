@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ceI-u6-jOU" customClass="VehicleCollectionView" customModule="CabifyChallenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="118" height="144"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="118" height="144"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WOZ-L3-Kqr">
+                        <rect key="frame" x="29" y="10" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="55b-GR-crn"/>
+                            <constraint firstAttribute="width" constant="60" id="5hh-8Y-X6s"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YoC-yi-22x">
+                        <rect key="frame" x="10" y="75" width="98" height="19.5"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HoO-aE-IPg">
+                        <rect key="frame" x="10" y="99.5" width="98" height="19.5"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="WOZ-L3-Kqr" firstAttribute="top" secondItem="ceI-u6-jOU" secondAttribute="top" constant="10" id="BcF-7G-NfP"/>
+                <constraint firstItem="YoC-yi-22x" firstAttribute="leading" secondItem="ceI-u6-jOU" secondAttribute="leading" constant="10" id="Dea-UT-IsM"/>
+                <constraint firstAttribute="trailing" secondItem="HoO-aE-IPg" secondAttribute="trailing" constant="10" id="S9q-vT-SES"/>
+                <constraint firstAttribute="trailing" secondItem="YoC-yi-22x" secondAttribute="trailing" constant="10" id="TRh-S1-73a"/>
+                <constraint firstItem="HoO-aE-IPg" firstAttribute="leading" secondItem="ceI-u6-jOU" secondAttribute="leading" constant="10" id="Y9R-PG-lK4"/>
+                <constraint firstItem="WOZ-L3-Kqr" firstAttribute="centerX" secondItem="ceI-u6-jOU" secondAttribute="centerX" id="i9q-nI-sVa"/>
+                <constraint firstItem="YoC-yi-22x" firstAttribute="top" secondItem="WOZ-L3-Kqr" secondAttribute="bottom" constant="5" id="nsc-La-7Bp"/>
+                <constraint firstItem="HoO-aE-IPg" firstAttribute="top" secondItem="YoC-yi-22x" secondAttribute="bottom" constant="5" id="peL-Qo-DwK"/>
+            </constraints>
+            <size key="customSize" width="118" height="144"/>
+            <connections>
+                <outlet property="imageVehicle" destination="WOZ-L3-Kqr" id="Bhf-eR-mEd"/>
+                <outlet property="nameLabel" destination="YoC-yi-22x" id="Gx6-d1-rNH"/>
+                <outlet property="priceLabel" destination="HoO-aE-IPg" id="T2p-dy-oQo"/>
+            </connections>
+            <point key="canvasLocation" x="6" y="93"/>
+        </collectionViewCell>
+    </objects>
+</document>

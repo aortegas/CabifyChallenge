@@ -7,21 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97F2B3FCC8A6C5AD83F3138A /* Pods_CabifyChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF4766D9C936B3CFDB1B414 /* Pods_CabifyChallenge.framework */; };
 		D306E5261DA7ED0B0044B7A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D306E5251DA7ED0B0044B7A5 /* AppDelegate.swift */; };
-		D306E5281DA7ED0B0044B7A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D306E5271DA7ED0B0044B7A5 /* ViewController.swift */; };
-		D306E52B1DA7ED0B0044B7A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D306E5291DA7ED0B0044B7A5 /* Main.storyboard */; };
 		D306E52D1DA7ED0B0044B7A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D306E52C1DA7ED0B0044B7A5 /* Assets.xcassets */; };
 		D306E5301DA7ED0B0044B7A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D306E52E1DA7ED0B0044B7A5 /* LaunchScreen.storyboard */; };
+		D306E5391DA7EE690044B7A5 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D306E5381DA7EE690044B7A5 /* MapVC.swift */; };
+		D306E53C1DA7F1140044B7A5 /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D306E53B1DA7F1140044B7A5 /* MapView.xib */; };
+		D306E53F1DA8162D0044B7A5 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D306E53E1DA8162D0044B7A5 /* Utils.swift */; };
+		D306E5411DA816810044B7A5 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D306E5401DA816810044B7A5 /* Localization.swift */; };
+		D306E5441DA819F40044B7A5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D306E5431DA819F40044B7A5 /* Constants.swift */; };
+		D306E5461DA8E66F0044B7A5 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D306E5451DA8E66F0044B7A5 /* AlertView.swift */; };
+		D306E5481DA8E6850044B7A5 /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D306E5471DA8E6850044B7A5 /* AlertView.xib */; };
+		D306E54A1DA948780044B7A5 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D306E5491DA948780044B7A5 /* .gitignore */; };
+		D306E54E1DA94ACC0044B7A5 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D306E54D1DA94ACC0044B7A5 /* Vehicle.swift */; };
+		D306E5511DA94C2D0044B7A5 /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D306E5501DA94C2D0044B7A5 /* JSONDecodable.swift */; };
+		D306E5541DA94CC10044B7A5 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D306E5531DA94CC10044B7A5 /* Resource.swift */; };
+		D306E5561DA94DA70044B7A5 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D306E5551DA94DA70044B7A5 /* APIRequest.swift */; };
+		D306E5581DA95F030044B7A5 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = D306E5571DA95F030044B7A5 /* Session.swift */; };
+		D306E55A1DA960690044B7A5 /* CabifySession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D306E5591DA960690044B7A5 /* CabifySession.swift */; };
+		D306E55C1DA962300044B7A5 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = D306E55B1DA962300044B7A5 /* Response.swift */; };
+		D306E55E1DAA5CEC0044B7A5 /* VehiclesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D306E55D1DAA5CEC0044B7A5 /* VehiclesListVC.swift */; };
+		D306E5601DAA62580044B7A5 /* VehiclesListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D306E55F1DAA62580044B7A5 /* VehiclesListView.xib */; };
+		D306E5661DAAB3430044B7A5 /* VehicleCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D306E5651DAAB3430044B7A5 /* VehicleCollectionView.swift */; };
+		D306E56A1DAB6F810044B7A5 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D306E5691DAB6F810044B7A5 /* Appearance.swift */; };
+		D306E56C1DAB70A60044B7A5 /* VehicleCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D306E56B1DAB70A60044B7A5 /* VehicleCollectionView.xib */; };
+		D306E56E1DAB78680044B7A5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D306E56D1DAB78680044B7A5 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DF4766D9C936B3CFDB1B414 /* Pods_CabifyChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CabifyChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AD7A60B8B3D1D8E475BDD78 /* Pods-CabifyChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CabifyChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CabifyChallenge/Pods-CabifyChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		3BBE7720FC337567E521FCF5 /* Pods-CabifyChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CabifyChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-CabifyChallenge/Pods-CabifyChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		D306E5221DA7ED0B0044B7A5 /* CabifyChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CabifyChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D306E5251DA7ED0B0044B7A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D306E5271DA7ED0B0044B7A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D306E52A1DA7ED0B0044B7A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D306E52C1DA7ED0B0044B7A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D306E52F1DA7ED0B0044B7A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D306E5311DA7ED0B0044B7A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D306E5381DA7EE690044B7A5 /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		D306E53B1DA7F1140044B7A5 /* MapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
+		D306E53E1DA8162D0044B7A5 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		D306E5401DA816810044B7A5 /* Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		D306E5431DA819F40044B7A5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D306E5451DA8E66F0044B7A5 /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		D306E5471DA8E6850044B7A5 /* AlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
+		D306E5491DA948780044B7A5 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = CabifyChallenge/.gitignore; sourceTree = "<group>"; };
+		D306E54D1DA94ACC0044B7A5 /* Vehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		D306E5501DA94C2D0044B7A5 /* JSONDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecodable.swift; sourceTree = "<group>"; };
+		D306E5531DA94CC10044B7A5 /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		D306E5551DA94DA70044B7A5 /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		D306E5571DA95F030044B7A5 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		D306E5591DA960690044B7A5 /* CabifySession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CabifySession.swift; sourceTree = "<group>"; };
+		D306E55B1DA962300044B7A5 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		D306E55D1DAA5CEC0044B7A5 /* VehiclesListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehiclesListVC.swift; sourceTree = "<group>"; };
+		D306E55F1DAA62580044B7A5 /* VehiclesListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VehiclesListView.xib; sourceTree = "<group>"; };
+		D306E5651DAAB3430044B7A5 /* VehicleCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleCollectionView.swift; sourceTree = "<group>"; };
+		D306E5691DAB6F810044B7A5 /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+		D306E56B1DAB70A60044B7A5 /* VehicleCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VehicleCollectionView.xib; sourceTree = "<group>"; };
+		D306E56D1DAB78680044B7A5 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +71,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97F2B3FCC8A6C5AD83F3138A /* Pods_CabifyChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6866ABC8CB2F72EBD117E653 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF4766D9C936B3CFDB1B414 /* Pods_CabifyChallenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC011847C836EF4447B56776 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3AD7A60B8B3D1D8E475BDD78 /* Pods-CabifyChallenge.debug.xcconfig */,
+				3BBE7720FC337567E521FCF5 /* Pods-CabifyChallenge.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D306E5191DA7ED0B0044B7A5 = {
 			isa = PBXGroup;
 			children = (
 				D306E5241DA7ED0B0044B7A5 /* CabifyChallenge */,
+				D306E5491DA948780044B7A5 /* .gitignore */,
 				D306E5231DA7ED0B0044B7A5 /* Products */,
+				CC011847C836EF4447B56776 /* Pods */,
+				6866ABC8CB2F72EBD117E653 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +117,112 @@
 		D306E5241DA7ED0B0044B7A5 /* CabifyChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				D306E5421DA819B90044B7A5 /* Common */,
+				D306E54B1DA948E50044B7A5 /* Models */,
+				D306E53A1DA7F0E10044B7A5 /* Views */,
+				D306E5681DAB6F700044B7A5 /* Themes */,
+				D306E5371DA7EE0C0044B7A5 /* Controllers */,
+				D306E53D1DA816180044B7A5 /* Helpers */,
+			);
+			path = CabifyChallenge;
+			sourceTree = "<group>";
+		};
+		D306E5371DA7EE0C0044B7A5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D306E5381DA7EE690044B7A5 /* MapVC.swift */,
+				D306E55D1DAA5CEC0044B7A5 /* VehiclesListVC.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D306E53A1DA7F0E10044B7A5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D306E5671DAAB47B0044B7A5 /* xib */,
+				D306E5451DA8E66F0044B7A5 /* AlertView.swift */,
+				D306E5651DAAB3430044B7A5 /* VehicleCollectionView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D306E53D1DA816180044B7A5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D306E53E1DA8162D0044B7A5 /* Utils.swift */,
+				D306E56D1DAB78680044B7A5 /* Extensions.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		D306E5421DA819B90044B7A5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
 				D306E5251DA7ED0B0044B7A5 /* AppDelegate.swift */,
-				D306E5271DA7ED0B0044B7A5 /* ViewController.swift */,
-				D306E5291DA7ED0B0044B7A5 /* Main.storyboard */,
+				D306E5401DA816810044B7A5 /* Localization.swift */,
+				D306E5431DA819F40044B7A5 /* Constants.swift */,
 				D306E52C1DA7ED0B0044B7A5 /* Assets.xcassets */,
 				D306E52E1DA7ED0B0044B7A5 /* LaunchScreen.storyboard */,
 				D306E5311DA7ED0B0044B7A5 /* Info.plist */,
 			);
-			path = CabifyChallenge;
+			name = Common;
+			sourceTree = "<group>";
+		};
+		D306E54B1DA948E50044B7A5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D306E5521DA94C7E0044B7A5 /* Network */,
+				D306E54F1DA94C080044B7A5 /* JSON */,
+				D306E54C1DA948EA0044B7A5 /* Model */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D306E54C1DA948EA0044B7A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D306E54D1DA94ACC0044B7A5 /* Vehicle.swift */,
+				D306E55B1DA962300044B7A5 /* Response.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D306E54F1DA94C080044B7A5 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				D306E5501DA94C2D0044B7A5 /* JSONDecodable.swift */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		D306E5521DA94C7E0044B7A5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D306E5531DA94CC10044B7A5 /* Resource.swift */,
+				D306E5551DA94DA70044B7A5 /* APIRequest.swift */,
+				D306E5571DA95F030044B7A5 /* Session.swift */,
+				D306E5591DA960690044B7A5 /* CabifySession.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		D306E5671DAAB47B0044B7A5 /* xib */ = {
+			isa = PBXGroup;
+			children = (
+				D306E53B1DA7F1140044B7A5 /* MapView.xib */,
+				D306E5471DA8E6850044B7A5 /* AlertView.xib */,
+				D306E55F1DAA62580044B7A5 /* VehiclesListView.xib */,
+				D306E56B1DAB70A60044B7A5 /* VehicleCollectionView.xib */,
+			);
+			name = xib;
+			sourceTree = "<group>";
+		};
+		D306E5681DAB6F700044B7A5 /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				D306E5691DAB6F810044B7A5 /* Appearance.swift */,
+			);
+			name = Themes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +232,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D306E5341DA7ED0B0044B7A5 /* Build configuration list for PBXNativeTarget "CabifyChallenge" */;
 			buildPhases = (
+				6EC7818E4B25C944D8239E02 /* [CP] Check Pods Manifest.lock */,
 				D306E51E1DA7ED0B0044B7A5 /* Sources */,
 				D306E51F1DA7ED0B0044B7A5 /* Frameworks */,
 				D306E5201DA7ED0B0044B7A5 /* Resources */,
+				010033CD72BF531C4EFDA9DB /* [CP] Embed Pods Frameworks */,
+				6F45B6A6638B700EB8D8DFFC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,35 +286,94 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D306E54A1DA948780044B7A5 /* .gitignore in Resources */,
+				D306E53C1DA7F1140044B7A5 /* MapView.xib in Resources */,
+				D306E56C1DAB70A60044B7A5 /* VehicleCollectionView.xib in Resources */,
+				D306E5481DA8E6850044B7A5 /* AlertView.xib in Resources */,
 				D306E5301DA7ED0B0044B7A5 /* LaunchScreen.storyboard in Resources */,
 				D306E52D1DA7ED0B0044B7A5 /* Assets.xcassets in Resources */,
-				D306E52B1DA7ED0B0044B7A5 /* Main.storyboard in Resources */,
+				D306E5601DAA62580044B7A5 /* VehiclesListView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		010033CD72BF531C4EFDA9DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CabifyChallenge/Pods-CabifyChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EC7818E4B25C944D8239E02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6F45B6A6638B700EB8D8DFFC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CabifyChallenge/Pods-CabifyChallenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D306E51E1DA7ED0B0044B7A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D306E5281DA7ED0B0044B7A5 /* ViewController.swift in Sources */,
+				D306E5541DA94CC10044B7A5 /* Resource.swift in Sources */,
+				D306E5441DA819F40044B7A5 /* Constants.swift in Sources */,
+				D306E5391DA7EE690044B7A5 /* MapVC.swift in Sources */,
 				D306E5261DA7ED0B0044B7A5 /* AppDelegate.swift in Sources */,
+				D306E55A1DA960690044B7A5 /* CabifySession.swift in Sources */,
+				D306E5511DA94C2D0044B7A5 /* JSONDecodable.swift in Sources */,
+				D306E55C1DA962300044B7A5 /* Response.swift in Sources */,
+				D306E55E1DAA5CEC0044B7A5 /* VehiclesListVC.swift in Sources */,
+				D306E5411DA816810044B7A5 /* Localization.swift in Sources */,
+				D306E54E1DA94ACC0044B7A5 /* Vehicle.swift in Sources */,
+				D306E5581DA95F030044B7A5 /* Session.swift in Sources */,
+				D306E56A1DAB6F810044B7A5 /* Appearance.swift in Sources */,
+				D306E53F1DA8162D0044B7A5 /* Utils.swift in Sources */,
+				D306E5661DAAB3430044B7A5 /* VehicleCollectionView.swift in Sources */,
+				D306E56E1DAB78680044B7A5 /* Extensions.swift in Sources */,
+				D306E5561DA94DA70044B7A5 /* APIRequest.swift in Sources */,
+				D306E5461DA8E66F0044B7A5 /* AlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D306E5291DA7ED0B0044B7A5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D306E52A1DA7ED0B0044B7A5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D306E52E1DA7ED0B0044B7A5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -247,6 +470,7 @@
 		};
 		D306E5351DA7ED0B0044B7A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AD7A60B8B3D1D8E475BDD78 /* Pods-CabifyChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CabifyChallenge/Info.plist;
@@ -258,6 +482,7 @@
 		};
 		D306E5361DA7ED0B0044B7A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BBE7720FC337567E521FCF5 /* Pods-CabifyChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CabifyChallenge/Info.plist;
@@ -286,6 +511,7 @@
 				D306E5361DA7ED0B0044B7A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

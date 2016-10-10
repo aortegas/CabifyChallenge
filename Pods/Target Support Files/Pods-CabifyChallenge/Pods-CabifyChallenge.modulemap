@@ -1,0 +1,6 @@
+framework module Pods_CabifyChallenge {
+  umbrella header "Pods-CabifyChallenge-umbrella.h"
+
+  export *
+  module * { export * }
+}
